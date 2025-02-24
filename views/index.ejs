@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <!-- Div where the quotes will be displayed after having fetched them-->
+    <div id="quotes"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Script for fetching the quotes from my custom API-->
+    <script>
+        async function fetchQuotes() {
+          try {
+            const response = await axios.get('/api/quotes');
+            //since the API returns an array, we use "response.data.data" so that we ensure that the data we get are an array-like
+            const quotes = response.data.data;
+            
+            const quotesContainer = document.getElementById('quotes');
+            quotesContainer.innerHTML = '';
+           
+            quotes.forEach(q => {
+              const quoteElement = document.createElement('p');
+              quoteElement.textContent = `"${q.quote}" - ${q.author}`;
+              quotesContainer.appendChild(quoteElement);
+            });
+          } catch (error) {
+            console.error('Errore nel recupero delle citazioni:', error);
+          }
+        }
+      
+        fetchQuotes();
+      </script>
+      
+</body>
+</html>

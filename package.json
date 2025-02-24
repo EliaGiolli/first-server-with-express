@@ -1,14 +1,17 @@
 {
-  "name": "node",
-  "version": "21.0.0",
-  "main": "index.js",
+  "name": "citazioni",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
   "devDependencies": {
