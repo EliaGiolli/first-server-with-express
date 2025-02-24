@@ -36,20 +36,21 @@ npm install
 5. Start the server:
 ```bash
 npm start
+```
 The server will be running on http://localhost:3000.
 
 ## Dependencies
 This project includes the following key dependencies:
 
-1. bcrypt
+1. **bcrypt**
 - Version: 5.1.1
 - Description: A library to hash passwords and provide a secure method for storing and validating user credentials.
 - Installation: This is installed automatically when you run npm install.
-2. ejs
+2. **ejs**
 - Version: 3.1.10
 - Description: EJS is a templating engine used to generate HTML markup with embedded JavaScript. It's used to render views in the app.
 - Installation: This is installed automatically when you run npm install.
-3. express
+3. **express**
 - Version: 4.21.2
 - Description: Express is a fast, unopinionated, minimalist web framework for Node.js. It's used to create the server and manage routing in this project.
 - Installation: This is installed automatically when you run npm install.
@@ -58,11 +59,11 @@ This project includes the following key dependencies:
 Once the server is running, you can interact with the API via the following endpoints:
 
 - GET **/api/quotes** - Get all quotes.
-- GET /api/quotes/random - Get a random quote.
-- GET /api/quotes/:id - Get a quote by its ID.
-- POST /api/quotes - Add a new quote (requires id, author, and quote in the request body).
-- PUT /api/quotes/:id - Update an existing quote by ID.
-- DELETE /api/quotes/:id - Delete a quote by ID.
+- GET **/api/quotes/random** - Get a random quote.
+- GET **/api/quotes/:id** - Get a quote by its ID.
+- POST **/api/quotes** - Add a new quote (requires id, author, and quote in the request body).
+- PUT **/api/quotes/:id** - Update an existing quote by ID.
+- DELETE **/api/quotes/:id** - Delete a quote by ID.
 For user authentication, refer to the login and registration endpoints (if implemented).
 
 
