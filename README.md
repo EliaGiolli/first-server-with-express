@@ -19,15 +19,16 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/quotes-api.git
+   ```
    
 2. Navigate to the project folder:
 ```bash
 cd quotes-api
-
+```
 3. Install the dependencies:
 ```bash
 npm install
-
+```
 4. Configure the server by setting environment variables (optional for local setup):
 - Create a .env file in the root of the project.
 - Add any necessary environment variables like PORT, DB_URI, etc.
