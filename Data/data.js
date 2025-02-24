@@ -1,23 +1,23 @@
 const quotes = [
     {
         id: "1",
-        author: "Il Cippe",
-        quote: "boia de. è già l'ora"
+        author: "Sir Francis Bacon",
+        quote: "Knowledge is power."
     },
     {
         id: "2",
-        author: "Germano Mosconi",
-        quote: "Chi è quel mona che sbatte la porta?!"
+        author: "Forrest Gump",
+        quote: "Life is like a box of chocolates. You never know what you're gonna get."
     },
     {
         id: "3",
-        author: "Dario Moccia",
-        quote: "De pefforza!"
+        author: "J.R.R Tolkien",
+        quote: "Not all those who wander are lost."
     },
     {
         id: "4",
-        author: "Pietro Pacciani",
-        quote: "Se ni'mondo esistesse un po' di bene e ognun si considerasse suo fratello, ci sarebbe meno pensieri e meno pene e il mondo ni' sarebbe assai più bello"
+        author: "William Shakespeare",
+        quote: "To be or not to be, that is the question."
     },
 ]
 
