@@ -1,4 +1,4 @@
-const quotes = require('../Data/data.js');
+const quotes = require('../data/data.js');
 const express = require('express');
 const router = express.Router();
 
