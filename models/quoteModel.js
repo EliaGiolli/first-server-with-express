@@ -1,0 +1,1 @@
+const dbQuotes = require('../config/database');
