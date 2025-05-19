@@ -1,15 +1,8 @@
-const express = require('express');
-const bcrypt = require('bcrypt');
+import express from 'express';
+import bcrypt from 'bcrypt';
 const router = express.Router();
 
-
 const users = [];
-
-//Route for the login
-router.get('/login', (req, res)=>{
-    res.render('login')
-})
-
 
 //Routes for the ejs pages
 router.get('/',(req,res)=>{
@@ -71,4 +64,4 @@ router.post('/register', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

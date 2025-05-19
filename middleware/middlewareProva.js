@@ -4,4 +4,4 @@ const middlewareProva = (req,res,next)=>{
     console.log(method,url,time)
     next()
 }
-module.exports = middlewareProva
+export default middlewareProva;

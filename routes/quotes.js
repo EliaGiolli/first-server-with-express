@@ -1,5 +1,5 @@
-const quotes = require('../data/data.js');
-const express = require('express');
+import quotes from '../data/data.js';
+import express from 'express';
 const router = express.Router();
 
 router.use(express.json())
@@ -62,4 +62,4 @@ router.delete('/:id', (req, res) => {
     res.status(200).json({ success: true, data: quotes });
 });
 
-module.exports = router;
+export default router;

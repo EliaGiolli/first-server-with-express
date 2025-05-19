@@ -21,4 +21,4 @@ const quotes = [
     },
 ]
 
-module.exports = quotes
+export default quotes;

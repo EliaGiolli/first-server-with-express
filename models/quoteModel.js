@@ -1,1 +1,1 @@
-const dbQuotes = require('../config/database');
+import dbQuotes from '../config/database.js';
