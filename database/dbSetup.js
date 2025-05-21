@@ -9,8 +9,6 @@ export async function createDatabase(){
         password: process.env.DB_PASS,
     })
 
-    await connection.query('CREATE DATABASE IF NOT EXISTS db_quotes');
-
     await connection.end();
 
     //create tables
@@ -23,25 +21,5 @@ export async function createDatabase(){
     await createTables(pool);
     await pool.end();
 
-}
-
-async function createTables(pool){
-    const connection = await pool.getConnection();
-
-    try{
-        await connection.query(`
-            CREATE TABLE IF NOT EXISTS quotes(
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                text TEXT NOT NULL,
-                author VARCHAR(255) NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            )
-        `);
-        console.log('Tables created/verified');
-    }catch(err){
-        console.error("an error with the table occurred",err);
-    }finally{
-        connection.release();
-    }
 }
 
