@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.static('Public'));
 
-app.set('view engine','ejs')
+//app.set('view engine','ejs')
 
 // MIDDLEWARES
 app.use(express.urlencoded({ extended: false }));

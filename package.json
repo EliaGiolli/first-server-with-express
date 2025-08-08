@@ -1,10 +1,10 @@
 {
   "name": "citazioni",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "server": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "helmet": "^8.1.0",
     "mongoose": "^8.17.1"

@@ -1,1 +1,18 @@
-import dbQuotes from '../config/database.js';
+import mongoose from 'mongoose';
+
+const quoteSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        required: true,
+    },
+    quote: {
+        type: String,
+        required: true,
+    },
+    author: {
+        type: String,
+        required: true,
+    },
+});
+
+export default mongoose.model('Quote', quoteSchema);
