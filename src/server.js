@@ -1,9 +1,7 @@
 import express from 'express';
-
-import quotesRoutes from './routes/quotes.js';
+import quotesRoutes from './routes/quotesRoute.js';
 import authRoutes from './routes/auth.js';
 import helmet from 'helmet';
-
 
 const app = express();
 
@@ -18,15 +16,7 @@ app.use(express.json());
 app.use(helmet());
 
 //ROUTES
-app.use('/', authRoutes)
-app.use('/api/quotes', quotesRoutes)
-app.use('/', authRoutes)
-app.use('/api/quotes', quotesRoutes)
-
-app.use((err, _req, res, _next) => {
-  console.error(err);
-  res.status(err.statusCode || 500).json({ error: err.message || 'Internal Server Error' });
-});
-
+app.use('/', authRoutes);
+app.use('/api/quotes', quotesRoutes);
 
 export default app;
